@@ -1,0 +1,110 @@
+{
+  "defaultSelection": "kiev",
+  "kiev": [
+    {
+      "Restaurants": {
+        "Header": "Kiev1",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurants1": {
+        "Header": "Kiev2",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurants2": {
+        "Header": "Kiev3",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+
+      "Restaurants3": {
+        "Header": "Kiev3",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurants4": {
+        "Header": "Kiev4",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurants5": {
+        "Header": "Kiev5",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      }
+    }
+  ],
+  "kharkiv": [
+    {
+      "Restaurants": {
+        "Header": "Kharkiv1",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurants1": {
+        "Header": "Kharkiv2",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurants2": {
+        "Header": "Kharkiv3",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurants3": {
+        "Header": "Kharkiv3",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      }
+    }
+  ],
+  "lviv": [
+    {
+      "Restaurant1": {
+        "Header": "Lviv1",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurant2": {
+        "Header": "Lviv2",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurant3": {
+        "Header": "Lviv3",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurant4": {
+        "Header": "Lviv2",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurant5": {
+        "Header": "Lviv3",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      }
+    }
+  ],
+  "odessa": [
+    {
+      "Restaurants": {
+        "Header": "Odessa1",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurants1": {
+        "Header": "Odessa2",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      },
+      "Restaurants2": {
+        "Header": "Odessa3",
+        "Paragraph": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad quod, ",
+        "url": "./img/top1.jpg"
+      }
+    }
+  ]
+}
