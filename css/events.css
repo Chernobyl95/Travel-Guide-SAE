@@ -1,0 +1,244 @@
+:root {
+  --button-bg-color: #b91d25;
+  --text-color: black;
+  --headers-txt-color: #513737;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.7em;
+}
+
+/*title*/
+.event-title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: flex-start;
+  color: var(--headers-txt-color);
+  padding-bottom: 20px;
+  padding: 50px;
+}
+/*end title*/
+
+/*event-info*/
+.container-options {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  padding-left: 50px;
+  margin-top: 20px;
+}
+.container-options label {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--headers-txt-color);
+}
+.container-options select {
+  width: clamp(100px, 75%, 200px);
+
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--headers-txt-color);
+}
+/*end event-info*/
+
+/*-------Main containers with events---------*/
+.container-event {
+  column-gap: 70px;
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-card img {
+  height: 300px;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.event-card {
+  width: 100%;
+  height: 300px;
+  margin: 50px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.521);
+  overflow: hidden;
+}
+.event-description {
+  height: 80px;
+  width: 100%;
+  padding: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 87px;
+  background: rgba(27, 27, 27, 0.8);
+  color: white;
+  transition: 0.5s;
+}
+.event-description h1 {
+  margin: 10px;
+  font-size: 30px;
+}
+.event-description p {
+  font-size: 20px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.event-card:hover {
+  cursor: pointer;
+}
+.event-card:hover .event-description {
+  height: 220px;
+  bottom: 150px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.event-card:hover p {
+  visibility: visible;
+  opacity: 1;
+}
+.event-card:hover img {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+/*---------Footer------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.box-footer {
+  max-width: 1170px;
+
+  margin: auto;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+ul {
+  list-style: none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: 500;
+}
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: var(--button-bg-color);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0 10px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+.cp-text {
+  color: #ffff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+/*-responsive*/
+
+@media (max-width: 1640px) {
+  .container-event {
+    column-gap: 70px;
+    grid-template-columns: 450px 450px;
+    justify-content: center;
+    max-width: 80%;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container-event {
+    grid-template-columns: 450px;
+
+    margin: 0;
+  }
+  .event-card img {
+    max-width: 100%;
+  }
+  .event-title {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .container-event {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+}

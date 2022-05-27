@@ -1,0 +1,381 @@
+:root {
+  --button-bg-color: #b91d25;
+  --text-color: black;
+  --headers-txt-color: #513737;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.7em;
+  overflow-x: hidden;
+  background: linear-gradient(
+    90deg,
+    var(--headers-txt-color) 0%,
+    var(--headers-txt-color) 30%,
+    var(--button-bg-color) 30%,
+    var(--button-bg-color) 100%
+  );
+}
+
+h1 {
+  color: var(--headers-txt-color);
+}
+
+/*------------Main Page-----------------------*/
+#error-firstname {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+  display: none;
+}
+#error-lastname {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+  display: none;
+}
+#error-email {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+  display: none;
+}
+#error-mobil {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+  display: none;
+}
+#error-message {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
+  display: none;
+}
+
+.contactUs {
+  position: relative;
+  width: 100%;
+  padding: 40px 100px;
+  background: rgb(56, 53, 53);
+}
+.contactUs .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.contactUs .title h2 {
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+.form {
+  position: relative;
+}
+.form {
+  grid-area: form;
+}
+
+.info {
+  grid-area: info;
+}
+
+.map {
+  grid-area: map;
+}
+.contact {
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 5px 35px rgbd(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.box {
+  position: relative;
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr;
+  grid-template-areas:
+    'form info'
+    'form map';
+  grid-gap: 20px;
+}
+.contact h3 {
+  color: #0e3959;
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+/*Form */
+.formBox {
+  position: relative;
+  width: 100%;
+}
+.formBox .row50 {
+  display: flex;
+  gap: 20px;
+}
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+.formBox .row100 .inputBox {
+  width: 100%;
+}
+.inputBox span {
+  color: #18b7ff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.inputBox input {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+}
+.inputBox textarea {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+  resize: none;
+  min-height: 220px;
+  margin-bottom: 10px;
+}
+button {
+  background: var(--button-bg-color);
+  color: #fff;
+  border: none;
+  font-size: 1.1em;
+  max-width: 200px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 15px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+button:disabled,
+button:hover:disabled {
+  background: #ccc;
+  color: #333;
+  border: #fff;
+}
+button:hover {
+  background: #fff;
+  color: var(--button-bg-color);
+  border: 1px solid var(--button-bg-color);
+}
+.inputBox ::placeholder {
+  color: #999;
+}
+#error {
+  color: red;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+/*info */
+.info {
+  background: rgb(34, 33, 33);
+}
+.info h3 {
+  color: #fff;
+}
+.info .infoBox div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.info .infoBox div span {
+  min-width: 40px;
+  height: 40px;
+  color: #fff;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.info .infoBox div p {
+  color: #fff;
+  font-size: 1.1em;
+}
+.info .infoBox div a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.sci {
+  margin-top: 40px;
+  display: flex;
+}
+.sci li {
+  list-style: none;
+  margin-right: 15px;
+}
+.sci li a {
+  color: #fff;
+  font-size: 2em;
+  color: #ccc;
+}
+.sci li a:hover {
+  color: #fff;
+}
+
+/*Map */
+.map {
+  padding: 0;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/*Responsive for contact form*/
+
+@media (max-width: 991px) {
+  body {
+    background: var(--headers-txt-color);
+  }
+  .contactUs {
+    padding: 20px;
+  }
+  .box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'form'
+      'info'
+      'map';
+  }
+  .formBox .row50 {
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+  }
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .contact {
+    padding: 30px;
+  }
+  .map {
+    min-height: 300px;
+    padding: 0;
+  }
+}
+
+/*---------Footer------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.box-footer {
+  max-width: 1170px;
+
+  margin: auto;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+ul {
+  list-style: none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: 500;
+}
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: var(--button-bg-color);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0 10px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+.cp-text {
+  color: #ffff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+/*-responsive for footer*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
