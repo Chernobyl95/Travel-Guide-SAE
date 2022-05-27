@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="../css/events.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="./js/menu.js" defer></script>
+    <script src="./js/events.js" defer></script>
+  </head>
+
+  <body>
+    <!--NavBar-->
+    <nav id="navbar">
+      <div class="container">
+        <img id="menu-btn" src="./icons/grid-outline.svg" alt="menu" />
+        <h1 class="logo">
+          <a href="index.html"><img src="./img/logo1.jpg" alt="" /></a>
+        </h1>
+        <ul>
+          <li><a href="index.html">Home </a></li>
+          <li><a href="./destintions.html">Destinations</a></li>
+          <li>
+            <a class="current" href="./events.html"
+              >Festival & Events <span> </span
+            ></a>
+          </li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--EndNavBar-->
+
+    <!--Events-->
+    <div class="event-title">
+      <!--Title-->
+      <h1>Events & Festivals</h1>
+    </div>
+
+    <!--Select your City-->
+    <div class="container-options">
+      <label for="subject">Choose City:</label><br />
+      <!--Select your City-->
+      <select name="event-cities" id="event_city">
+        <!--options-->
+        <option value="kiev" id="kiev" selected="selected">Kiev</option>
+        <option value="kharkiv" id="kharkiv">Kharkiv</option>
+        <option value="lviv" id="lviv">Lviv</option>
+        <option value="odessa" id="odessa">Odessa</option></select
+      ><br />
+    </div>
+
+    <!-- Event Card Container -->
+    <a href="./event-card.html">
+      <div id="events_all">
+        <div class="container-event"></div>
+      </div>
+    </a>
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+      <div class="box-footer">
+        <!--container-->
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Phone</a></li>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Address</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">Suppor</a></li>
+              <li><a href="#">Policies & Processes</a></li>
+              <li><a href="#">Travel Documents</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="cp-text">
+        © Copyright 2022 UkraineTravel. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
